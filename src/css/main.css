@@ -1,0 +1,53 @@
+@import "/src/css/core.css";
+
+body {
+  font-size: 1.6rem;
+  font-weight: 500;
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  grid-template-columns: auto;
+  grid-template-rows: 5rem 1fr 5rem;
+}
+
+.ms-header {
+  grid-area: header;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* MAIN START */
+
+.ms-main {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ms-form-section {
+  margin: 8px;
+}
+
+.ms-form-main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 8px;
+}
+
+.ms-input-error {
+  display: none;
+}
+
+/* MAIN END */
+
+.ms-footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
